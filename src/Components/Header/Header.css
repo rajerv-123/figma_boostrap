@@ -1,0 +1,52 @@
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.dropdown-menu {
+  width: 900px; 
+  padding: 20px; 
+}
+
+.dropdown-menu .col-md-6 h5 {
+  color: #30336b; 
+}
+
+.dropdown-menu .bi {
+  color: #f16322;
+}
+
+.dropdown-menu .d-flex {
+  padding: 10px 0; 
+}
+
+.nav-link {
+  color: #30336b;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #f16322;
+}
+
+.navbar-brand span {
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.btn-outline-primary {
+  color: #2c2d5b;
+  border-color: #2c2d5b;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2c2d5b;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #2c2d5b;
+}

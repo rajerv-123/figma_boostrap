@@ -9,35 +9,33 @@ import {
   Col,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className="py-3 justify-content-center">
       <Container>
-        <Navbar.Brand href="#home">
-          <span style={{ color: "#f16322" }}>Ship</span>
-          <span style={{ color: "#30336b" }}>Up</span>
+        <Navbar.Brand href="#home" className="px-3">
+          <span style={{ color: "#30336b" }}>Ship</span>
+          <span style={{ color: "#f16322", fontWeight: "500" }}>Up</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <NavDropdown
-              title="Company"
-              id="company-nav-dropdown"
-              className="position-static"
-            >
-              <div className="dropdown-menu p-3 w-100">
+            <NavDropdown title="Company">
+              <div className="dropdown-menu w-100 show align-items-start">
                 <Row>
                   <Col md={6}>
                     <h5>Company</h5>
                     <NavDropdown.Item href="#about-us">
-                      <div className="d-flex align-items-center">
+                      <div className="d-flex align-items-start">
                         <i
                           className="bi bi-person-fill mr-2"
-                          style={{ fontSize: "1.5em" }}
+                          style={{ fontSize: "1.5em", color: "#f16322" }}
                         ></i>
                         <div>
-                          <strong>About US</strong>
+                          <strong>About Us</strong>
                           <p className="mb-0 small">
                             The people behind ShipUp and the story of shared
                             success.
@@ -46,12 +44,20 @@ const Header = () => {
                       </div>
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#partner">
-                      <div className="d-flex align-items-center">
+                      <div className="d-flex align-items-start">
                         <i
                           className="bi bi-handshake-fill mr-2"
-                          style={{ fontSize: "1.5em" }}
+                          style={{ fontSize: "1.5em", color: "#f16322" }}
                         ></i>
                         <div>
+                          <i
+                            className="bi bi-people"
+                            style={{
+                              fontSize: "1.5em",
+                              color: "#f16322",
+                              marginLeft: "auto",
+                            }}
+                          ></i>{" "}
                           <strong>Partner With Us</strong>
                           <p className="mb-0 small">
                             Collaboration with ShipUp and drive mutual growth.
@@ -60,10 +66,10 @@ const Header = () => {
                       </div>
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#careers">
-                      <div className="d-flex align-items-center">
+                      <div className="d-flex align-items-start">
                         <i
                           className="bi bi-briefcase-fill mr-2"
-                          style={{ fontSize: "1.5em" }}
+                          style={{ fontSize: "1.5em", color: "#f16322" }}
                         ></i>
                         <div>
                           <strong>Career</strong>
@@ -87,17 +93,42 @@ const Header = () => {
                 </Row>
               </div>
             </NavDropdown>
-            <Nav.Link href="#services">Services</Nav.Link>
-            <Nav.Link href="#solutions">Solutions</Nav.Link>
-            <Nav.Link href="#industries">Industries</Nav.Link>
-            <Nav.Link href="#insights">Insights</Nav.Link>
-            <Nav.Link href="#news">News And Media</Nav.Link>
+            <Nav.Link href="#services" className="px-3">
+              Services
+            </Nav.Link>
+            <Nav.Link href="#solutions" className="px-3">
+              Solutions
+            </Nav.Link>
+            <Nav.Link href="#industries" className="px-3">
+              Industries
+            </Nav.Link>
+            <Nav.Link href="#insights" className="px-3">
+              Insights
+            </Nav.Link>
+            <Nav.Link href="#news" className="px-3">
+              News And Media
+            </Nav.Link>
           </Nav>
-          <Nav className="ml-auto">
-            <Button variant="outline-primary" className="mr-2">
+          <Nav className="ml-auto d-flex align-items-center">
+            <Button
+              // variant="outline-primary"
+              className="mr-lg-2 mb-2 mb-lg-0 px-3"
+              style={{
+                color: "#2C2D5B",
+                backgroundColor: "white",
+                fontWeight: "500",
+              }}
+            >
               Request Quote
             </Button>
-            <Button variant="primary">Join Now</Button>
+          </Nav>
+          <Nav className="ml-auto m-lg-2">
+            <Button
+              style={{ backgroundColor: "#2C2D5B", borderColor: "#2C2D5B" }}
+              className="px-3"
+            >
+              Join Now
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,0 +1,30 @@
+.inputFiledContier {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none; 
+}
+
+.inputFiledContier .input-group {
+  border: 1px solid #ddd; 
+}
+
+.inputFiledContier .input-group .form-control {
+  box-shadow: none; 
+}
+
+.inputFiledContier .btn-primary {
+  background-color: #2c2d5b;
+  border-color: #2c2d5b;
+}
+
+.inputFiledContier .btn-primary:hover {
+  background-color: #1f1f3d; 
+  border-color: #1f1f3d; 
+}
+
+.inputFiledContier .bi {
+  font-size: 1.2rem;
+}
+
+.inputFiledContier .col-md-3 h5 {
+  color: #30336b;
+}
